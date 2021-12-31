@@ -1,4 +1,3 @@
-p {
-  color: blue;
-  display: flex;
-  flex-direction: column; }
+* {
+  font-family: 'Noto Sans KR';
+  font-weight: 500; }
