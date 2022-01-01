@@ -2,3 +2,17 @@
 @import './base/nomalize';
 @import './base/reset';
 
+$hongsi : 1;
+
+P{
+    line-height: $hongsi;
+}
+
+a{
+    $hongsi:2;
+    line-height: $hongsi;
+}
+
+span {
+    line-height: $hongsi;
+}

@@ -402,3 +402,14 @@ a, button {
 ul, ol {
   list-style: none;
   padding-left: 0; }
+
+P {
+  line-height: 1; }
+
+a {
+  line-height: 2; }
+
+span {
+  line-height: 1; }
+
+/*# sourceMappingURL=style.css.map */
