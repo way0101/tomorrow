@@ -8,8 +8,8 @@
         }
     }
     &-right{
-        .gnb-search-button{
-            margin-right: 14px
+        .gnb-icon-button.is-search{
+            margin-right: 4px
         }
     }
 
@@ -18,17 +18,9 @@
         height: 50px
     }
 
-    &-icon-button{
-       @include flexbox;
-       width: 32px;
-       height: 32px;
-       font-size: 24px;
-        color: $secondary;
-    }
+  
 
-    &-menu-button{
-        color: $blue
-    }
+    
     
     .logo{
         @include pos-center;
@@ -39,6 +31,67 @@
             display: block;
             width: auto;
             height: 20px;
+        }
+    }
+
+    @include responsive(T){
+        &-left{
+            @include flexbox(start)
+        }
+        &-right{
+            @include flexbox(end);
+            .button-group{
+                margin-right: 24px
+            }
+            .gnb-icon-btn{
+                margin-right: 8px;
+            }
+
+            .gnb-auth{
+                margin-left: 8px;
+
+                &:first-child{
+                    margin-right: 12px
+                }
+
+
+                a{
+                    @include text-style(14, $secondary);
+                    font-weight: 700;
+
+                    &:hover{
+                        color: $blue;
+                    }
+                }
+                
+            }
+        }
+
+        &-wrapper{
+            height:80px;
+        }
+        .logo{
+            position: static;
+            margin-right: 32px;
+            transform: none;
+            img{
+                height: 24px;
+            }
+        }
+        .btn-fill-primary{
+            width: 88px;
+            i{
+               margin-left: 4px;
+            }
+        }
+    }
+
+    @include responsive(D){
+        &-right{
+            .input-group{
+                width: 264px;
+                margin-right: 24px;
+            }
         }
     }
 }
