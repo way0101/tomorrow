@@ -1,7 +1,14 @@
 .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $sidebar-level;
     width: 240px;
+    height: 100vh;
+    overflow-y: auto;
     padding: 32px 20px;
     background-color: $white;
+    overscroll-behavior: contain;
 
 
     &-header{
@@ -26,8 +33,6 @@
         @include flexbox(start);
         height: 88px;
     }
-
-
 
     &-user{
 
@@ -98,5 +103,9 @@
 
         }
         
+    }
+
+    &::-webkit-scrollbar{
+        display: none;
     }
 }
